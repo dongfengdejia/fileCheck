@@ -3,7 +3,7 @@ import fileCheck
 
 
 fileName = "README.md"
-hashCode = "604fbb506f13bd7dc338ee8468b4ef13204ba26e8872c8475ac55fc564f7f7f6"
+hashCode = "1bf6a31098979ef8d126c7603def5b8149c0146ef21f636a2324e85b35ad6014"
 
 class TestFileCheck(unittest.TestCase):
 
