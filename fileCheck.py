@@ -47,8 +47,8 @@ def calcCheckSum(fileList):
         cmd = "sha256sum " + file
         output = commands.getoutput(cmd)
         output = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
-        [chechSum, file] = output.stdout.read().split()
-        fileMap[file] = chechSum
+        [checkSum, file] = output.stdout.read().split()
+        fileMap[file] = checkSum
     return fileMap;
         
 def saveStore(fileMap):
