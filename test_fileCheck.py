@@ -9,6 +9,7 @@ class TestFileCheck(unittest.TestCase):
 
     def test_fileCheck(self):
         fileMap = fileCheck.calcCheckSum([fileName])
+        print "+++",fileMap
         checkSum = fileMap["*" + fileName]
         self.assertEquals(checkSum, hashCode)
     
