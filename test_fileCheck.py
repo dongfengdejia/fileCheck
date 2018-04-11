@@ -9,8 +9,10 @@ class TestFileCheck(unittest.TestCase):
 
     def test_fileCheck(self):
         fileMap = fileCheck.calcCheckSum([fileName])
-        print "+++",fileMap
-        checkSum = fileMap["*" + fileName]
+        if fileMap.has_key(fileName):
+            checkSum = fileMap[fileName] #  for travis CI
+        else:
+            checkSum = fileMap["*" + fileName]  # for local test
         self.assertEquals(checkSum, hashCode)
     
     
